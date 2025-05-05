@@ -8,4 +8,5 @@ pycoingecko
 python-binance
 python-dotenv
 cryptography
-cryptography
+openai
+openai
