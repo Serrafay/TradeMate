@@ -6,4 +6,5 @@ plotly
 Pillow
 pycoingecko
 python-binance
-python-binance
+python-dotenv
+python-dotenv
