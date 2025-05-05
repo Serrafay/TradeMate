@@ -5,3 +5,5 @@ requests
 plotly
 Pillow
 pycoingecko
+python-binance
+python-binance
