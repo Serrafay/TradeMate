@@ -1,4 +1,3 @@
-a me servono soluzioni gratuite efficace e che mantengono le stesse funzionalità del codice 
 import streamlit as st
 import pandas as pd
 import numpy as np
