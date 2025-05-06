@@ -9,4 +9,5 @@ python-binance
 python-dotenv
 cryptography
 openai
-openai
+pyrebase
+firebase-admin
