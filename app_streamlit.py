@@ -1,4 +1,16 @@
 # TradeMate - app_streamlit.py COMPLETO
+# ----------------- Header con logo -------------------
+st.markdown(
+    """
+    <div style='text-align: center; margin-bottom: 20px;'>
+        <img src='assets/trademate-logo.png' alt='TradeMate Logo' width='100'/>
+        <h1 style='margin-top: 0;'>🚀 TradeMate</h1>
+        <h4>La tua dashboard per il trading cripto</h4>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 import streamlit as st
 import json
 import os
