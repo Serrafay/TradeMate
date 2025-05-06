@@ -11,3 +11,4 @@ cryptography
 openai
 pyrebase
 firebase-admin
+pycryptodome
