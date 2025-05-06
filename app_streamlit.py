@@ -1,3 +1,4 @@
+import streamlit as st
 # TradeMate - app_streamlit.py COMPLETO
 # ----------------- Header con logo -------------------
 st.markdown(
@@ -11,7 +12,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-import streamlit as st
+
 import json
 import os
 import requests
