@@ -1,0 +1,109 @@
+TRADEMATE PRO - SCHEMA APPLICAZIONE
+
+1. PAGINA DI LOGIN/REGISTRAZIONE
+├── Form di Login
+│   ├── Campo Username
+│   ├── Campo Password
+│   └── Bottone "Accedi"
+└── Form di Registrazione
+    ├── Campo Nuovo Username
+    ├── Campo Nuova Password
+    ├── Campo Conferma Password
+    └── Bottone "Crea Account"
+
+2. DASHBOARD PRINCIPALE (dopo login)
+├── Header
+│   ├── Logo
+│   ├── Nome Utente
+│   └── Badge Premium (se attivo)
+
+3. SEZIONE STATO SISTEMA (expandable)
+├── Monitoraggio
+│   ├── Stato (ATTIVO/DISATTIVO)
+│   └── Ultimo Errore (se presente)
+├── Connessione API
+│   ├── Stato Binance
+│   └── Stato OpenAI
+└── Ultimo Aggiornamento
+    └── Timestamp
+
+4. SEZIONE CONTROLLI
+├── Selezione Asset (dropdown)
+├── Bottone "Avvia Monitoraggio"
+├── Bottone "Ferma Monitoraggio"
+└── Bottone "Aggiorna Wallet"
+
+5. SEZIONE GRAFICI
+├── Grafico Prezzi (24h)
+│   ├── Andamento prezzo
+│   └── Zoom interattivo
+└── Grafico RSI
+    ├── Linea RSI
+    ├── Linee soglia (30/70)
+    └── Zoom interattivo
+
+6. TAB PANEL PRINCIPALE
+├── Tab Notifiche
+│   ├── Lista segnali recenti
+│   ├── Icone stato (BUY/SELL/HOLD)
+│   └── Timestamp
+├── Tab AI Advisor
+│   ├── Campo testo per domande
+│   ├── Bottone "Ottieni Analisi"
+│   └── Area risposta AI
+└── Tab Wallet
+    ├── Valore totale wallet
+    ├── Lista asset
+    │   ├── Quantità
+    │   ├── Valore USD
+    │   └── Barra progresso % sul totale
+    └── Messaggio stato (se vuoto)
+
+7. BACKEND (non visibile all'utente)
+├── Live Monitor Thread
+│   ├── Connessione a CoinGecko API
+│   ├── Calcolo RSI
+│   └── Generazione segnali
+├── Gestione API Binance
+│   ├── Lettura wallet
+│   └── Verifica connessione
+└── Integrazione OpenAI
+    ├── Prompt engineering
+    └── Gestione errori/quota
+
+8. FLUSSO DATI PRINCIPALE
+1. Utente effettua login
+2. Applicazione verifica credenziali
+3. Inizializza connessione a Binance
+4. Avvia monitoraggio asset selezionato
+5. Mostra dashboard con:
+   - Dati in tempo reale
+   - Grafici aggiornati
+   - Segnali trading
+6. Gestisce interazioni utente:
+   - Cambio asset
+   - Domande all'AI
+   - Aggiornamento wallet
+
+9. COMPONENTI CHIAVE
+├── Session State Management
+├── Multi-threading per monitoraggio
+├── Crittografia API keys
+├── Cache dati locali
+└── Gestione errori robusta
+
+10. ARCHITETTURA TECNICA
+Frontend: Streamlit UI
+├── Plotly per grafici
+├── Gestione stato con session_state
+└── Layout responsive
+
+Backend: Python
+├── CoinGecko API - Dati di mercato
+├── Binance API - Wallet/trading
+└── OpenAI API - Analisi AI
+
+Middleware:
+├── Thread separato per monitoraggio
+├── Coda dati per aggiornamenti UI
+└── Sistema di logging avanzato

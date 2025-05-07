@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>TradeMate Wallet</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b0e11;
+      color: #f0b90b;
+      margin: 0;
+      padding: 0;
+    }
+    /* ...resto dello stile... */
+  </style>
+</head>
+<body>
+  <header>
+    <img src="trademate-logo.png" alt="TradeMate Logo">
+    <h1>Saldo Wallet</h1>
+  </header>
+  <main>
+    <ul id="wallet-list"></ul>
+  </main>
+  <script>
+    fetch("http://localhost:5000/api/wallet")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Errore nella risposta del server");
+        }
+        return response.json();
+      })
+      .then(data => {
+        const list = document.getElementById("wallet-list");
+        data.forEach(coin => {
+          const item = document.createElement("li");
+          item.textContent = `${coin.asset}: ${coin.free}`;
+          list.appendChild(item);
+        });
+      })
+      .catch(error => {
+        const list = document.getElementById("wallet-list");
+        const item = document.createElement("li");
+        item.textContent = "Errore nel recupero del saldo: " + error.message;
+        item.className = "error";
+        list.appendChild(item);
+      });
+  </script>
+</body>
+</html>
