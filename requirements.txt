@@ -1,0 +1,15 @@
+streamlit
+pandas
+numpy
+requests
+plotly
+Pillow
+pycoingecko
+python-binance
+python-dotenv
+cryptography
+openai
+pyrebase4==4.8.0
+firebase-admin
+pycryptodome
+ta
