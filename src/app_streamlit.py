@@ -12,7 +12,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 import json
 import os
 import requests
