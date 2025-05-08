@@ -1,1 +1,15 @@
-streamlit\npandas\nnumpy\nrequests\nplotly\nPillow\npycoingecko\npython-binance\npython-dotenv\ncryptography\nopenai\npyrebase4==4.8.0\nfirebase-admin\npycryptodome\nta
+streamlit
+pandas
+numpy
+requests
+plotly
+Pillow
+pycoingecko
+python-binance
+python-dotenv
+cryptography
+openai
+pyrebase4==4.8.0
+firebase-admin
+pycryptodome
+ta
