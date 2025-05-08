@@ -12,3 +12,5 @@ openai>=0.27.0
 pyrebase4==4.8.0
 firebase-admin>=5.2.0
 pycryptodome>=3.10.4
+ta
+
