@@ -19,7 +19,6 @@ st.markdown(
 )
 
 
->>>>>>> a0e5bef88f313569822f2b9c0563e3f45ca81cf4
 import json
 import os
 import requests
