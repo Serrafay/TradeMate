@@ -14,3 +14,4 @@ firebase-admin>=5.2.0
 pycryptodome>=3.10.4
 ta
 
+pyrebase4==4.8.0
