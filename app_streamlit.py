@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Modifica del 6 maggio 2025  # ✅ Modifica test 6 maggio 2025
 
 
@@ -24,8 +24,7 @@ import json
 import os
 import requests
 import plotly.graph_objs as go
-import pandas as pd
-<<<<<<< HEAD
+import pandas
 from ta.momentum import RSIIndicator
 from pycoingecko import CoinGeckoAPI
 from binance.client import Client
@@ -428,4 +427,3 @@ try:
     st.plotly_chart(fig, use_container_width=True)
 except:
     st.warning("Errore nel caricamento del grafico.")
->>>>>>> a0e5bef88f313569822f2b9c0563e3f45ca81cf4
