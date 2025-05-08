@@ -3,7 +3,6 @@
 
 
 import streamlit as st
-=======
 import streamlit as st
 # TradeMate - app_streamlit.py COMPLETO
 # ----------------- Header con logo -------------------
@@ -283,7 +282,7 @@ if st.session_state.logged_in:
     except:
         st.warning("Impossibile recuperare notizie al momento.")
 
-=======
+
 import numpy as np
 from pycoingecko import CoinGeckoAPI
 from dotenv import load_dotenv
